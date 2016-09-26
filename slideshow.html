@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>travel at peace</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 id="enjoy">enjoy.</h1>
+<div id="hide">
+
+	<h1 onclick="getElementById('teaser').style.display = 'block'">places i'd like to visit...</h1>
+	<h2 id="teaser" onclick="getElementById('slide').style.display = 'block'">wouldn't you like to know?</h2>
+<div id ="slide">
+	<div class="images"><img src="tokyo.jpg"><div class="places">tokyo</div></div>
+
+
+
+	<div class="images"><img src="dubai.jpg"><div class="places">dubai</div></div>
+
+
+
+	<div class="images"><img src="brazil.jpg"><div class="places">brazil</div></div>
+
+
+
+	<div class="images"><img src="ibiza.jpg"><div class="places">ibiza</div></div>
+
+
+
+	<div class="images"><img src="amsterdam.jpg"><div class="places">amsterdam</div></div>
+
+	<a class="back-button" onclick="toggleDiv(-1)">&#10094; prev</a>
+	<a class="foward-button" onclick="toggleDiv(+1)">next &#10095; </a>
+</div>
+</div>
+<footer>
+	<h3 id="me" onclick="myFunction()"><a href="https://twitter.com/Itseasymike" target="_blank">site by: itseasymike</a></h3>
+</footer>
+</body>
+
+<script type="text/javascript">
+	//Hides all content on body only displaying background and heading
+	function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('enjoy').style.display = 'block';
+	}
+
+
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		x[slideIndex-1].style.display = "block";
+	}
+</script>
+</body>
+</html>

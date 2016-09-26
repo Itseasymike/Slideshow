@@ -1,0 +1,76 @@
+body {
+	background: url("bg.gif") no-repeat center fixed;
+	background-size: cover;
+	font-family: Helvetica;
+}
+#enjoy {
+	display: none;
+}
+#enjoy:hover {
+	cursor: default;
+}
+h1 {
+	color: white;
+}
+h1:hover {
+	cursor: pointer;
+}
+h2 {
+	color: white;
+	display: none;
+}
+h2:hover {
+	cursor: pointer;
+}
+#slide {
+	display: none;
+	margin-top: 50px;
+}
+img {
+	
+	border-radius: 5px;
+	height: 40%;
+	width: 30%;
+	filter: grayscale(100%);
+	position: fixed;
+}
+img:hover {
+	filter: grayscale(0%);
+}
+a:hover {
+	cursor: pointer;
+}
+.back-button, .foward-button {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 8px;
+	padding: 3px;
+	position: absolute;
+}
+.foward-button {
+	margin-left: 370px;
+}
+.places {
+	color: white;
+	text-shadow: 2px 2px black;
+	font-weight: bold;
+    font-size: 16px;
+    padding: 15px 25px;
+    position: absolute;
+    width: 25%;
+    text-align: center;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+}
+h3 a {
+	color: white;
+	text-decoration: none;
+}
+h3 a:hover {
+	text-shadow: 2px 2px black;
+}
